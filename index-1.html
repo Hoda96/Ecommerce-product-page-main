@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+        <link rel="stylesheet" href="style-1.css">
+
+        <script defer src="script-1.js"></script>
+        <title>Frontend Mentor | E-commerce product page</title>
+    </head>
+    <body>
+        <div class="pop-up-background"></div>
+           <header class="header">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="logo" >
+            </div>
+            <nav class="menu-items">
+                    <a href="#" class="menu-links">Collections</a>
+                    <a href="#" class="menu-links">Men</a>
+                    <a href="#" class="menu-links">Women</a>
+                    <a href="#" class="menu-links">About</a>
+                    <a href="#" class="menu-links">Contact</a>
+            </nav>
+            <div class="menu-icon">
+                <div class="icon-cart-number">3</div>
+                    <div class="shopping-cart"><img src="./images/icon-cart.svg" 
+                    alt="shopping cart"></div>
+                    <div class="user-profile"><img src="./images/image-avatar.png" 
+                    alt="user profile" width="50" height="50"></div>
+            </div>
+            <div class="empty-cart" >
+                <div class="cart-top">
+                    <p class="cart-title">Cart</p>
+                </div>
+                <div class="cart-empty-msg">
+                    <p class="cart-msg">Your cart is empty.</p>
+                </div>
+            
+                <div class="fill-cart" style="display: none" >
+                  <div class="cart-container">
+                    <img src="./images/image-product-1-thumbnail.jpg" width="80" height="80" alt="product-in-cart">
+                        <div class="product-summary">
+                                <p class="product-name-cart">Fall Limited Edition Sneakers</p>
+                                <div class="calculate">
+                                    <p class="product-price-cart">$125.00 </p>
+                                    <p class="product-quantity"> x 0 </p>
+                                    <p class="total-price">$375.00</p>
+                                </div>
+                            </div> 
+                        <img class="icon-delete" src="images/icon-delete.svg" width="20" height="25" alt="" />
+                    </div>
+                        <button class="checkout" type="submit">Checkout</button>
+                </div>
+            </div>
+           </header> 
+           <div class="space"></div>
+           <section class="content">
+            <div class="left">
+                <img src="./images/image-product-1.jpg" 
+                alt="featured image" 
+                class="featured-img">
+                <div class="img-gallery">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="" 
+                    width="100" height="100" class="product-img">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="" 
+                    width="100" height="100" class="product-img">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="" 
+                    width="100" height="100" class="product-img">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="" 
+                    width="100" height="100" class="product-img">
+                </div>
+            </div>
+            <div class="right">
+                <h5 class="company-name">sneaker company</h5>
+                <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque cum corporis, quidem facere adipisci consequuntur eos aspernatur quod porro molestiae commodi! Facere illum provident rerum distinctio praesentium, veritatis dicta reiciendis.</p>
+                <div class="product-price"><span class="price">$125.00</span><span class="sale-price">50%</span></div>
+                <span class="original-price">$250.00</span>
+
+                <div class="product-counter">
+                    <button  class="add-product"><img src="images/icon-plus.svg" id="plus" alt="" /></button>
+                    <input type="text" class="input-product-num" value="0" min="1" />
+                   <button  class="remove-product"> <img src="images/icon-minus.svg" id="minus" alt="" /></button>
+                </div>
+                <div class="add-to-cart"><button class="add-cart" type="submit"><svg
+                    id="button-cart"
+                    width="22"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                      fill="#FFFFFF"
+                      fill-rule="nonzero"
+                    />
+                  </svg> Add to cart</button></div>
+            </div>
+           </section>
+            <div class="main-slider" style="display: none;">
+            <div class="slide">
+                <img class="icon-close" src="images/icon-close.svg" alt="" />
+                <button class="direction-btn icon-previous-btn">
+                  <img class="direction" src="images/icon-previous.svg" alt="" />
+                </button>
+                <img class="slide-img slide-img-1" src="./images/image-product-1.jpg" alt=""
+                 >
+                 <img class="slide-img slide-img-2" src="./images/image-product-2.jpg" alt=""
+                 style="display: none;">
+                 <img class="slide-img slide-img-3" src="./images/image-product-3.jpg" alt=""
+                 style="display: none;">
+                 <img class="slide-img slide-img-4" src="./images/image-product-4.jpg" alt=""
+                 style="display: none;">
+          
+                 <button class="direction-btn icon-next-btn">
+                    <img class="direction" src="images/icon-next.svg" alt="" />
+                  </button>
+            </div>
+            
+            <div class="slide-thumbnails">
+                <img class="pop-up-thumbnails pop-up-thumbnails-1 pop-active"
+                 src="./images/image-product-1-thumbnail.jpg" width="100" height="100" alt="">
+                <img class="pop-up-thumbnails pop-up-thumbnails-2 " 
+                src="./images/image-product-2-thumbnail.jpg" width="100" height="100" alt="">
+                <img class="pop-up-thumbnails pop-up-thumbnails-3 "
+                 src="./images/image-product-3-thumbnail.jpg" width="100" height="100" alt="">
+                <img class="pop-up-thumbnails pop-up-thumbnails-4 " 
+                src="./images/image-product-4-thumbnail.jpg" width="100" height="100" alt="">
+            </div>
+           </div> 
+    </body>
+</html>
