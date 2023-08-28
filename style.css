@@ -37,7 +37,7 @@ font-family: "Kumbh Sans", sans-serif;
    */
   
   main {
-    width: 1160px;
+    width: 90vw;
     max-width: 100%;
     display: block;
   }
@@ -611,12 +611,10 @@ font-family: "Kumbh Sans", sans-serif;
   margin-top: 20px;
 }
 .user-profile{
-  height: 3.8rem;
-  cursor: pointer;
+   height: 3.8rem; cursor: pointer; border: 2px solid #fff; border-radius: 50px;
 }
 .user-profile:hover{
-  border: 2px solid #f98001;
- border-radius: 50px;
+border-color:#f98001
 }
 .main-slider{
   top: 9rem;
